@@ -80,41 +80,6 @@ class Node {
         this[childPosition].right = childRight;
         if (childRight) this[childPosition].right.parent = this[childPosition];
 
-
-        // var parent = this.parent,
-        //     parentOfParent = parent.parent,
-        //     parentChild = (parent.left != this) ? parent.left : parent.right,
-        //     childLeft = this.left,
-        //     childRight = this.right;
-
-        // var position = (parent.left == this) ? 'left' : 'right';
-
-        // if (parentOfParent) parentOfParent.removeChild(parent);
-
-        // parent.removeChild(parent.right);
-        // parent.removeChild(parent.left);
-
-        // this.removeChild(this.left);
-        // this.removeChild(this.right);
-
-        // if (parentOfParent) {
-        // 	parentOfParent.appendChild(this);
-        // } else {
-        // 	this.parent = null;
-        // }
-
-        // if (position == 'left') {
-        //     this.appendChild(parent);
-        //     if (parentChild) this.appendChild(parentChild);
-
-        // } else if (position == 'right') {
-        //     if (parentChild) this.appendChild(parentChild);
-        //     this.appendChild(parent);
-        // }
-
-        // this[position].appendChild(childLeft);
-        // this[position].appendChild(childRight);
-
     }
 
 }
